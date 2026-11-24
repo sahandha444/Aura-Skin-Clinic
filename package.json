@@ -1,0 +1,19 @@
+{
+  "name": "aura-skin-clinic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahandha444/Aura-Skin-Clinic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahandha444/Aura-Skin-Clinic/issues"
+  },
+  "homepage": "https://github.com/sahandha444/Aura-Skin-Clinic#readme"
+}
