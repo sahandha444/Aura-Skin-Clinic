@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" preserveAspectRatio="none">
+  <defs>
+    <filter id="feather" filterUnits="userSpaceOnUse" x="-100" y="-100" width="600" height="700">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <linearGradient id="shoulderFade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="500">
+      <stop offset="0" stop-color="white"/>
+      <stop offset=".68" stop-color="white"/>
+      <stop offset=".8" stop-color="white" stop-opacity=".75"/>
+      <stop offset=".9" stop-color="white" stop-opacity=".28"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="-60" width="352" height="532" rx="56" fill="url(#shoulderFade)" filter="url(#feather)"/>
+</svg>
