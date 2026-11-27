@@ -17,10 +17,7 @@ export default function Home() {
           </h1>
           <p className="doctor-credit">By Dr. Samantha</p>
           <div className="hero-actions">
-            <a className="button button-cream" href="tel:+94777682014">
-              Call 077 768 2014 <span aria-hidden="true">↗</span>
-            </a>
-            <Link className="text-link" href="/services">Explore our services</Link>
+            <Link className="button button-cream" href="/services">Explore our services</Link>
           </div>
           <p className="hero-location">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">

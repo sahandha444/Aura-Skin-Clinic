@@ -21,6 +21,11 @@ const socialLinks: { label: string; href: string | null; path: string }[] = [
   }
 ];
 
+export function WhatsAppIcon() {
+  const whatsapp = socialLinks.find(link => link.label === "WhatsApp")!;
+  return <svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor" aria-hidden="true"><path d={whatsapp.path} /></svg>;
+}
+
 export default function FooterSocials() {
   return (
     <div className="footer-socials" aria-label="Social media">
