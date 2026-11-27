@@ -76,14 +76,24 @@ export default function Home() {
           />
         </div>
       </IntroductionReveal>
-      <section className="doctor-introduction" aria-labelledby="doctor-title">
-        <h2 id="doctor-title">One doctor.<br />Care for every part of you.</h2>
-        <p>
-          With <strong className="doctor-experience">20+ years</strong> of
-          experience, <em className="doctor-name">Dr. Samantha Weththasinghe</em> is
-          trusted by patients as their first choice for care.
-        </p>
-      </section>
+      <IntroductionReveal className="doctor-introduction" labelledBy="doctor-title">
+        <div className="campaign-portrait doctor-portrait">
+          <Image
+            src="/logo/doctor-cutout.png"
+            alt="Dr. Samantha Weththasinghe"
+            fill
+            sizes="(max-width: 800px) 85vw, 40vw"
+          />
+        </div>
+        <div className="doctor-copy">
+          <h2 id="doctor-title">Your skin clinic.<br />Your family doctor.</h2>
+          <p>
+            With <strong className="doctor-experience">20+ years</strong> of
+            experience, <em className="doctor-name">Dr. Samantha Weththasinghe</em> is
+            trusted by patients as their first choice for care.
+          </p>
+        </div>
+      </IntroductionReveal>
     </>
   );
 }

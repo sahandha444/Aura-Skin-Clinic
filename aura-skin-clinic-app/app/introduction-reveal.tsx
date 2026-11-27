@@ -2,7 +2,11 @@
 
 import { useEffect, useRef, type ReactNode } from "react";
 
-export default function IntroductionReveal({ children }: { children: ReactNode }) {
+export default function IntroductionReveal({
+  children,
+  className = "home-introduction",
+  labelledBy = "introduction-title",
+}: { children: ReactNode; className?: string; labelledBy?: string }) {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -39,8 +43,8 @@ export default function IntroductionReveal({ children }: { children: ReactNode }
   return (
     <section
       ref={sectionRef}
-      className="home-introduction"
-      aria-labelledby="introduction-title"
+      className={className}
+      aria-labelledby={labelledBy}
     >
       {children}
     </section>

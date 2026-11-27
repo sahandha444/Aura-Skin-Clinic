@@ -1,0 +1,16 @@
+Service image completion — 2026-11-27
+
+Generated with the built-in imagegen tool. Fictional AI illustrations, not actual patients, clinical evidence, or promised outcomes. Existing visible AI disclosure remains in before-after.tsx.
+
+Added assets:
+- face-lifting-after-generated.webp: edit of existing before image; subtle lower-cheek and jaw lift, preserving age and texture.
+- hydra-facial-after-generated.webp: edit of existing before image; subtle hydration, preserving pigmentation and pores.
+- psoriasis-after-generated.webp: edit of existing before image; reduced scaling with a residual patch.
+- vitiligo-before-generated.webp: adult South Asian forearm, medium brown skin, irregular depigmented patches, ivory linen, diffuse light.
+- vitiligo-after-generated.webp: matched edit with modest partial repigmentation and substantial patches remaining.
+- acne-treatment-before-generated.webp: adult South Asian woman, mild to moderate cheek acne, residual marks, warm ivory background.
+- acne-treatment-after-generated.webp: matched edit with fewer active blemishes and residual marks retained.
+
+Common constraints: natural brown skin tone, realistic texture, identical framing/pose/light within pairs, square format, no text, no collage, no skin lightening or airbrushing. Exported to WebP at quality 90.
+
+Validation: all 29 referenced treatment assets and 5 category assets exist and decode; all new pairs visually reviewed; npm run lint passed.
