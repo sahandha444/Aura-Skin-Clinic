@@ -40,7 +40,6 @@ export default function Footer() {
       </div>
       <div className="footer-bottom">
         <p>© 2026 AURA Family Health Care &amp; Skin Clinic. All rights reserved.</p>
-        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
       </div>
     </footer>
   );
