@@ -1,0 +1,47 @@
+{
+  "note": "Built-in imagegen; fictional AI illustrations, not actual patients or promised results. Matched edits, neutral daylight colour, natural texture preserved; WebP quality 90.",
+  "assets": [
+    {
+      "name": "aesthetic-facials",
+      "prompt": "Close three-quarter portrait of an adult South Asian woman age 30, medium brown skin, hair tied back, no makeup, mild ordinary surface dryness on cheek, neutral relaxed expression, grey top. Whole cheek centered, full nose visible.",
+      "edit": "Change only mild surface dryness to a modestly hydrated refreshed appearance. Retain pores, pigmentation, age, fine lines and natural skin texture. No whitening, no makeup, no pore erasure.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-3eef2761-28f4-4bdc-993b-275a73e9c405.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-283879bd-7367-4c0f-af08-16846b7e6a01.png"
+    },
+    {
+      "name": "aesthetic-cleanup",
+      "prompt": "Close crop of adult South Asian woman's nose and adjacent cheek, medium brown skin, small ordinary blackheads and mild pore congestion on nose, natural pores, no makeup.",
+      "edit": "Reduce only a portion of visible blackheads and surface congestion, retain natural pores and some small residual blackheads, no airbrushing, no lightening skin.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-08788e6c-170c-43c0-bfbb-50e81a6afd10.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-fc5dbb94-e6bd-499a-b4eb-9c67cf525952.png"
+    },
+    {
+      "name": "aesthetic-manicure",
+      "prompt": "Top-down close photograph of an adult South Asian woman's left hand resting flat on a white cotton towel, five anatomically correct fingers visible, medium brown skin, natural unpolished fingernails with slightly uneven free edges and mildly dry skin around nails. Clean healthy nails, no disease, no jewelry.",
+      "edit": "Change only nail grooming: neatly file the natural nail edges, gently tidy dry skin around nails without cutting cuticles, apply a subtle clear glossy finish. Preserve five fingers, hand pose, nails length approximately same, skin texture and towel.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-dc3d05d8-e9fb-4b02-86b4-1553e6ef47b8.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-7f8f9d39-a944-4f8d-9db3-3135d17aef9c.png"
+    },
+    {
+      "name": "aesthetic-pedicure",
+      "prompt": "Top-down close photograph of one adult South Asian woman's foot resting naturally on white cotton towel, five anatomically correct toes visible, medium brown skin, healthy unpolished toenails with slightly uneven edges, mild ordinary dry skin around nails. Clean respectful professional grooming image.",
+      "edit": "Change only grooming: neatly trim and file healthy toenails, subtly moisturise dry skin around nails, apply a clear natural glossy finish. Keep five toes, identical foot pose, skin tone, no nail disease transformation.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-3b69d677-50f5-4f38-9103-f2c7e78db867.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-47a2430c-ba37-4650-acbf-fc35f8131bc5.png"
+    },
+    {
+      "name": "aesthetic-waxing",
+      "prompt": "Close clinical photograph of adult South Asian woman's outer lower leg from below knee to above ankle, resting diagonally on a white cotton towel. Natural medium brown skin with ordinary visible fine dark leg hair. No face or feet.",
+      "edit": "Remove most visible leg hair only, retaining natural pores, fine skin texture and a few fine residual hairs. Preserve exactly leg shape, tiny marks, skin colour, towel folds, shadows and framing.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-e11601d1-5189-4925-aa1b-6207a49394ba.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-91c1db2a-2ea4-43a1-aad6-8725d0c20c73.png"
+    },
+    {
+      "name": "aesthetic-threading",
+      "prompt": "Close photograph of one eyebrow and eye of an adult South Asian woman age 28 with medium brown skin, natural full dark eyebrow with a few stray hairs below arch and between brows, no makeup, relaxed expression.",
+      "edit": "Remove only stray hairs below brow arch and between brows, producing a neat natural eyebrow outline. Preserve full natural brow thickness, individual brow hairs, eye, lashes, expression, skin tone and texture. No makeup, no reshaping the eye.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-6542adab-8a85-44e7-aff0-251c83a426c6.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-a01a0973-2581-4f11-8141-4bd6e54f291b.png"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import SiteHeader from "./site-header";
 import Footer from "./footer";
 import "./globals.css";
 
-export const metadata: Metadata = { title: "AURA Family Health Care & Skin Clinic" };
+export const metadata: Metadata = { title: "Aura Family Health Care & Skin Clinic" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

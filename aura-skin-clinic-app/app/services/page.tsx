@@ -15,7 +15,6 @@ export default function Services() {
   return (
     <div className="services">
       <header className="services-heading">
-        <p className="services-eyebrow">Care at Aura</p>
         <h1>Our services</h1>
         <p>Skin, hair, body and aesthetic treatments. Family healthcare, too.</p>
       </header>

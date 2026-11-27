@@ -11,7 +11,7 @@ export default function Home() {
       <section className="home-hero" aria-labelledby="clinic-title">
         <div className="hero-copy">
           <h1 id="clinic-title">
-            <span className="clinic-name">AURA</span>
+            <span className="clinic-name">Aura</span>
             <span className="family-care">Family Health Care</span>
             <span className="skin-clinic">&amp; Skin Clinic</span>
           </h1>
@@ -92,6 +92,9 @@ export default function Home() {
             experience, <em className="doctor-name">Dr. Samantha Weththasinghe</em> is
             trusted by patients as their first choice for care.
           </p>
+          <Link className="button button-outline" href="/about">
+            About us
+          </Link>
         </div>
       </IntroductionReveal>
     </>

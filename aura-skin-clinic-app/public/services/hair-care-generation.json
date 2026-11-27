@@ -1,0 +1,35 @@
+{
+  "note": "Built-in imagegen. Fictional AI illustrations, not actual patients or treatment results. WebP quality 90.",
+  "assets": [
+    {
+      "name": "hair-dandruff",
+      "prompt": "Macro editorial view of parted black hair on an adult South Asian person's medium brown scalp, small ordinary dry white dandruff flakes visible at roots, clean respectful presentation, no exaggerated symptoms.",
+      "source": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-28266794-3dc0-4772-9ff8-bfaa9ba34021.png"
+    },
+    {
+      "name": "hair-fall",
+      "prompt": "Close overhead editorial view of the crown of an adult South Asian man with short black hair and mild thinning at crown, realistic visible medium brown scalp between hairs, ordinary natural appearance, no exaggerated baldness.",
+      "source": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-9d4b3602-6d38-4b42-a015-b3e5c57c39b0.png"
+    },
+    {
+      "name": "hair-scalp-psoriasis",
+      "prompt": "Close editorial view behind the ear of an adult South Asian person, dark hair gently parted to reveal a small mild scaly patch at the hairline on medium brown skin. Respectful non-graphic presentation, no wounds or bleeding.",
+      "source": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-20d9aa84-daa6-4efb-a1d7-097e67b78f62.png"
+    },
+    {
+      "name": "hair-prp",
+      "prompt": "Editorial still life for platelet-based hair care: a small sterile capped clear specimen tube with pale golden plasma in a minimalist white laboratory rack, beside a sealed sterile syringe without exposed needle on an ivory clinical tray. No red blood, no branding, no lettering. Subtle out-of-focus clinic background.",
+      "source": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-b91557f1-019b-4731-bfc3-4637a8c48936.png"
+    },
+    {
+      "name": "hair-microneedling",
+      "prompt": "Close editorial photograph of a clinician's gloved hand holding a professional white microneedling pen just above the parted black hair of an adult South Asian patient's medium brown scalp. Non-invasive illustrative moment before contact, no visible needles, no blood, natural anatomy.",
+      "source": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-81e14612-347f-41d1-b3c0-ae1d1cca0191.png"
+    },
+    {
+      "name": "hair-high-frequency",
+      "prompt": "Close editorial photograph of a clinician's gloved hand holding a clear glass comb-shaped high-frequency scalp electrode hovering just above black hair of an adult South Asian patient. The glass comb has a faint violet glow, natural realistic clinic equipment, no sparks, no dramatic energy effects, no text.",
+      "source": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-304e07e2-9961-4757-aa4d-1ba9d1bb5bde.png"
+    }
+  ]
+}

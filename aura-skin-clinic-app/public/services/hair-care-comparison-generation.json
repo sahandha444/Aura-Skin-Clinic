@@ -1,0 +1,47 @@
+{
+  "note": "Fictional AI illustrations, not actual patient results. Neutral daylight palette. Before and after generated as matched edits. High frequency illustrates grooming only.",
+  "assets": [
+    {
+      "name": "hair-dandruff-v2",
+      "prompt": "Close top-down view of parted black hair on adult South Asian woman's scalp. Small visible dry white dandruff flakes at roots.",
+      "edit": "Reduce only loose flakes, retain a few flakes and exactly same hair strands and scalp.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-47681d43-d317-4d3a-9778-93cfcaadb808.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-2923de7d-3fa1-4282-b5e5-00724c99ffe7.png"
+    },
+    {
+      "name": "hair-fall-v2",
+      "prompt": "Overhead crown of adult South Asian man with short black hair and moderate natural thinning, some visible scalp between hairs.",
+      "edit": "Modestly increase hair density in thinning area; retain visible scalp and natural residual thinning.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-7bbad03a-402c-458e-a7c5-f8b0e37c4095.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-9bc42733-8b88-4162-bd16-d30c0054de1e.png"
+    },
+    {
+      "name": "hair-scalp-psoriasis-v2",
+      "prompt": "Close rear three-quarter view of adult South Asian person's ear and hairline with a small scaly psoriasis patch, medium brown skin, dark hair tied up.",
+      "edit": "Reduce only scale and irritation of patch, retain visible residual discolouration and some scaling.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-45382497-3584-441b-ac29-cde413a21d0e.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-ef6fd55c-7ab6-49f3-85e9-b7e43cee735f.png"
+    },
+    {
+      "name": "hair-prp-v2",
+      "prompt": "Close overhead view of adult South Asian man's crown with black hair and mild diffuse thinning. Heather grey shirt collar at bottom.",
+      "edit": "Show modestly denser hair at crown, with residual thinning and scalp still visible, no full hair restoration.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-e343eee3-46d9-45b1-b056-eda8c59b835c.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-3f8b99a6-6e0b-4b1b-80da-88d4a0f14722.png"
+    },
+    {
+      "name": "hair-microneedling-v2",
+      "prompt": "Close top-down view of adult South Asian woman's central part with black hair and mild thinning around a widened part. Faded blue shirt at bottom.",
+      "edit": "Show modestly denser hair around part, with part and some visible scalp still remaining, not perfect density.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-39354d4e-1ebb-49d4-90b0-1ac27240f6f0.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-39d6680f-8141-42e4-9b36-249b9b1abb41.png"
+    },
+    {
+      "name": "hair-high-frequency-v2",
+      "prompt": "Close view of parted black hair on adult South Asian person's scalp with scattered loose surface flakes and mild oily clumping of roots.",
+      "edit": "Illustrate scalp after routine grooming only: slightly fewer loose flakes and less clumped hair. No new hair growth or change in density; preserve hairline and part.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-00082bf3-f5be-408b-82c3-1eb4772f0826.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-efa5a276-4de8-483f-96a6-36a46d79170d.png"
+    }
+  ]
+}

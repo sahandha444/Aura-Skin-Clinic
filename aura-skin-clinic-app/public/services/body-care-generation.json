@@ -1,0 +1,47 @@
+{
+  "note": "Built-in imagegen. Fictional AI illustrations, not actual patients or clinical evidence. Neutral daylight; modest changes only. Diet planning compares meal balance. Exported as WebP quality 90.",
+  "assets": [
+    {
+      "name": "body-skin-tightening",
+      "prompt": "Close clinical view of the outer upper arm of an adult South Asian woman aged 50 with medium brown skin and mild loose crepey skin. Shoulder in a sleeveless charcoal grey top visible, arm relaxed against torso. Crop shoulder to elbow, no face.",
+      "edit": "Change only mild upper-arm skin laxity to subtly firmer skin. Preserve natural creases, age, skin texture, and overall arm size.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-258a39ab-4c30-44a0-9d2c-fd2356197670.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-71f3bfe4-7b9b-4f2d-af76-934e3b2579e5.png"
+    },
+    {
+      "name": "body-shaping",
+      "prompt": "Adult South Asian woman standing naturally in fitted opaque grey athletic T-shirt and dark blue leggings, fully clothed, crop shoulders to mid thighs, arms relaxed. Ordinary curvy adult build, slight waist fullness. Neutral grey clinic wall.",
+      "edit": "Show only a modest subtle reduction of waist fullness through the same fitted T-shirt. Keep same pose, garment colour, body proportions and background; no dramatic weight loss, no muscular transformation.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-8091621f-2a9d-42b7-abb1-8e4787ff4e39.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-ebdae90a-4e7c-4cdc-af67-2b3a57f80bdb.png"
+    },
+    {
+      "name": "body-fat-reduction",
+      "prompt": "Side view of an adult South Asian man in a fitted opaque navy cotton T-shirt and grey exercise trousers, crop shoulders to upper thighs, ordinary build with modest abdominal fullness, relaxed posture, no face.",
+      "edit": "Show a small subtle reduction in local abdominal fullness through the same shirt. Preserve same posture, shirt folds where possible, body proportions and natural shape. No dramatic weight loss or change in musculature.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-33c205a2-4906-4bba-a3b3-d5039a41d8f9.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-836c318d-3760-433c-b4ac-722146e27961.png"
+    },
+    {
+      "name": "body-diet-planning",
+      "prompt": "Realistic overhead photograph of a simple everyday lunch on a white round plate on cool grey kitchen table: large serving of white rice, a small portion of cooked chicken, very few cooked vegetables, glass of water beside plate. Natural Sri Lankan everyday food, realistic home cooking, no branding, no lettering.",
+      "edit": "Rebalance only the food portions on the plate: modest rice portion, a balanced portion of the same chicken, generous colourful cooked vegetables and leafy greens. Keep exact plate, tabletop, glass, camera, daylight and shadows. A meal planning comparison, not a weight loss result.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-56f86b80-46be-442e-aa79-e844c3ebeca7.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-c94d309e-4da3-4f41-b7c5-127dc09e66a2.png"
+    },
+    {
+      "name": "body-rf-ultrasound",
+      "prompt": "Close clinical progress view of an adult South Asian woman's outer upper arm with mild skin laxity and natural fine creases. Medium brown skin, heather blue short-sleeve top rolled just above area, arm relaxed vertically, plain white clinic wall.",
+      "edit": "Only slightly refine loose skin texture and firmness of upper arm, retaining natural creases and the same arm size, age and body shape. No dramatic tightening.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-63b2d3c9-ae82-4bb9-8a53-02f1d92cff1a.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-8d23d545-0049-4e9b-86db-7d72c2836b90.png"
+    },
+    {
+      "name": "body-allergy-care",
+      "prompt": "Non-graphic close clinical photograph of adult South Asian person's inner forearm with a small mildly irritated dry pinkish-brown patch on medium brown skin. Arm rests on a white cotton towel, grey sleeve ends at elbow. No wounds, no blood, no severe symptoms.",
+      "edit": "Reduce only mild local irritation and dryness, retaining a faint residual patch. Preserve exact anatomy, skin colour, hairs, towel folds, sleeve, camera framing, shadows and light.",
+      "before": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-e6f99d5c-c84c-4a84-920a-a5f7570e79d4.png",
+      "after": "/home/sahan-jayasinghe/.codex/generated_images/01a21bbd-dbcf-7fd1-9e19-44cdf0c19475/exec-31890480-e5be-4fd8-b6a4-f2379d66361d.png"
+    }
+  ]
+}

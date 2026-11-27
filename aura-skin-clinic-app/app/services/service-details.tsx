@@ -3,7 +3,8 @@
 import { useEffect } from "react";
 import { serviceCategories } from "./data";
 import BeforeAfter from "./before-after";
-import { treatmentDetails } from "./treatments";
+import AnimatedDetails from "./animated-details";
+import { aestheticTreatmentDetails, bodyTreatmentDetails, hairTreatmentDetails, treatmentDetails } from "./treatments";
 
 export default function ServiceDetails() {
   useEffect(() => {
@@ -33,17 +34,25 @@ export default function ServiceDetails() {
   return (
     <div className="service-details">
       {serviceCategories.map(category => (
-        <details className="service-category" key={category.id} id={category.id} open={category.id === "skin"}>
+        <AnimatedDetails className="service-category" key={category.id} id={category.id}>
           <summary className="service-category-heading">
             <h2>{category.name}</h2>
             <span className="accordion-icon" aria-hidden="true" />
           </summary>
           <div className="service-treatment-list">
-            {category.services.map(service => {
-              const treatment = category.id === "skin" ? treatmentDetails[service] : undefined;
+            {category.id === "family-healthcare" ? (
+              <ul className="family-service-list">
+                {category.services.map(service => <li key={service}>{service}</li>)}
+              </ul>
+            ) : category.services.map(service => {
+              const treatment = category.id === "skin"
+                ? treatmentDetails[service]
+                : category.id === "hair-care" ? hairTreatmentDetails[service]
+                : category.id === "body-care" ? bodyTreatmentDetails[service]
+                : category.id === "aesthetic" ? aestheticTreatmentDetails[service] : undefined;
               if (!treatment) return <p className="treatment-name" key={service}>{service}</p>;
               return (
-                <details className="treatment-detail" key={service} open={service === "Laser pigmentation removal"}>
+                <AnimatedDetails className="treatment-detail" key={service}>
                   <summary>
                     <h3>{service}</h3>
                     <span className="accordion-icon" aria-hidden="true" />
@@ -63,11 +72,11 @@ export default function ServiceDetails() {
                       afterAlt={treatment.afterAlt}
                     />
                   </div>
-                </details>
+                </AnimatedDetails>
               );
             })}
           </div>
-        </details>
+        </AnimatedDetails>
       ))}
     </div>
   );

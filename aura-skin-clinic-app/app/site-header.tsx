@@ -40,12 +40,12 @@ export default function SiteHeader() {
   }, [pathname]);
 
   return (
-    <header className="masthead" ref={headerRef}>
+    <header className="masthead" ref={headerRef} data-interior={pathname !== "/"}>
       <Link className="wordmark" href="/" aria-label="Aura Plus home">
         <Image src={logo} alt="" sizes="106px" />
         <sup aria-hidden="true">+</sup>
       </Link>
-      <Navigation />
+      <Navigation key={pathname} />
     </header>
   );
 }
