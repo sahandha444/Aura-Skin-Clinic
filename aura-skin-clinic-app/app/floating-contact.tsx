@@ -5,6 +5,15 @@ import { WhatsAppIcon } from "./footer-socials";
 
 export default function FloatingContact() {
   const [visible, setVisible] = useState(false);
+  const [footerVisible, setFooterVisible] = useState(false);
+
+  useEffect(() => {
+    const footer = document.querySelector(".site-footer");
+    if (!footer) return;
+    const observer = new IntersectionObserver(([entry]) => setFooterVisible(entry.isIntersecting));
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     let timer: ReturnType<typeof setTimeout>;
@@ -20,7 +29,7 @@ export default function FloatingContact() {
   if (!visible) return null;
 
   return (
-    <aside className="floating-contact" aria-label="Contact Aura">
+    <aside className="floating-contact" aria-label="Contact Aura" data-hidden={footerVisible} inert={footerVisible} aria-hidden={footerVisible}>
       <a className="floating-contact-whatsapp" href="https://wa.me/94777682014" target="_blank" rel="noopener noreferrer" aria-label="Message Aura on WhatsApp" title="Message on WhatsApp">
         <WhatsAppIcon />
         <span>WhatsApp</span>
