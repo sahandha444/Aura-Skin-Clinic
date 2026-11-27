@@ -652,6 +652,8 @@ h1, h2 { font-family: var(--display); font-weight: 400; }
 }
 .contact-main-phone:hover { color: var(--bronze); }
 .contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-top: auto; }
+.contact-actions .button { justify-content: center; gap: .6rem; }
+.contact-actions .button svg { flex-shrink: 0; width: 20px; height: 20px; }
 .contact-panel .button { min-width: 0; padding: .85rem 1.25rem; border-radius: .3rem; font-size: .9rem; }
 .contact-call-button { background: var(--ink); border: 1px solid var(--ink); color: var(--ivory); }
 .contact-call-button:hover { background: var(--bronze); border-color: var(--bronze); color: var(--ivory); }
