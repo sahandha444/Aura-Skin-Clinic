@@ -41,7 +41,10 @@ export default function Contact() {
           <h2 id="contact-visit-title">Visit Aura</h2>
           <p className="contact-panel-intro">Family Health Care &amp; Skin Clinic</p>
           <address>Isadeen town, Matara<br />Sri Lanka</address>
-          <a className="button button-outline contact-directions" href={directions} target="_blank" rel="noopener noreferrer">Get directions</a>
+          <a className="button button-outline contact-directions" href={directions} target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" /><circle cx="12" cy="10" r="2.5" /></svg>
+            Get directions
+          </a>
         </section>
       </div>
       <div className="contact-social-section">

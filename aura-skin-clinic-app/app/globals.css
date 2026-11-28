@@ -125,7 +125,7 @@ body:has(.home-hero) main {
   flex-direction: column;
   flex: 1;
 }
-h1, h2 { font-family: var(--display); font-weight: 400; }
+h1, h2 { font-family: var(--display), serif; font-weight: 400; }
 
 .home-hero {
   flex: 0 0 auto;
@@ -144,7 +144,7 @@ h1, h2 { font-family: var(--display); font-weight: 400; }
 .home-hero h1 { margin: 0; font-weight: 400; }
 .clinic-name {
   display: block;
-  font-family: var(--display);
+  font-family: var(--display), serif;
   font-size: clamp(5rem, min(15vw, 22svh), 14rem);
   line-height: 1.05;
   font-weight: 400;
@@ -174,8 +174,8 @@ h1, h2 { font-family: var(--display); font-weight: 400; }
   position: relative;
   aspect-ratio: 5 / 6;
   overflow: hidden;
-  -webkit-mask: url("/logo/portrait-mask.svg") center / 100% 100% no-repeat;
-  mask: url("/logo/portrait-mask.svg") center / 100% 100% no-repeat;
+  -webkit-mask: url("../public/logo/portrait-mask.svg") center / 100% 100% no-repeat;
+  mask: url("../public/logo/portrait-mask.svg") center / 100% 100% no-repeat;
 }
 .campaign-portrait img {
   object-fit: cover;
@@ -286,14 +286,14 @@ h1, h2 { font-family: var(--display); font-weight: 400; }
 .doctor-copy { display: grid; gap: 1.5rem; }
 .doctor-name {
   color: var(--bronze);
-  font-family: var(--display);
+  font-family: var(--display), serif;
   font-size: 1.4em;
   font-style: italic;
   font-weight: 400;
 }
 .doctor-experience {
   color: var(--ink);
-  font-family: var(--display);
+  font-family: var(--display), serif;
   font-size: 1.4em;
   font-style: italic;
   font-weight: 700;
@@ -385,7 +385,7 @@ h1, h2 { font-family: var(--display); font-weight: 400; }
 .service-category summary:focus-visible { outline: 2px solid var(--bronze); outline-offset: 4px; }
 .treatment-content { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(1.5rem, 4vw, 3rem); padding: .5rem 0 2rem clamp(.5rem, 1.5vw, 1.5rem); }
 .treatment-description p { color: #66574c; font-size: .9rem; line-height: 1.8; margin: 0 0 1.1rem; }
-.treatment-description .treatment-intro { font-family: var(--display); font-size: 1.7rem; color: var(--ink); line-height: 1.3; }
+.treatment-description .treatment-intro { font-family: var(--display), serif; font-size: 1.7rem; color: var(--ink); line-height: 1.3; }
 .treatment-description h4 { margin: 1.5rem 0 .6rem; font-size: .9rem; font-weight: 500; }
 .treatment-description .treatment-note { font-size: .8rem; }
 .treatment-description .button { min-width: 0; font-size: .85rem; margin-top: .5rem; }
@@ -634,14 +634,14 @@ h1, h2 { font-family: var(--display); font-weight: 400; }
 .contact-heading h1 em { color: var(--bronze); font-weight: 400; }
 .contact-heading p { margin: 0; color: #66574c; font-size: 1rem; line-height: 1.7; }
 .contact-details { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
-.contact-panel { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(1.5rem, 3vw, 2.75rem); background: #fffcf7; border: 1px solid var(--line); border-radius: .75rem; box-shadow: 0 5px 18px #2a201c04; }
-.contact-panel-icon { display: grid; place-items: center; width: 3rem; height: 3rem; margin-bottom: 1.5rem; border-radius: 50%; background: #8b632f0c; color: var(--bronze); }
+.contact-panel { display: flex; flex-direction: column; align-items: center; text-align: center; padding: clamp(1.25rem, 2vw, 1.75rem); background: #fffcf7; border: 1px solid var(--line); border-radius: .75rem; box-shadow: 0 5px 18px #2a201c04; }
+.contact-panel-icon { display: grid; place-items: center; width: 2.5rem; height: 2.5rem; margin-bottom: .75rem; border-radius: 50%; background: #8b632f0c; color: var(--bronze); }
 .contact-panel h2 { margin: 0 0 .5rem; font-size: 1.75rem; font-weight: 400; line-height: 1.2; }
-.contact-panel-intro { margin: 0 0 1.5rem; color: #66574c; font-size: .9rem; line-height: 1.6; }
+.contact-panel-intro { margin: 0 0 1rem; color: #66574c; font-size: .9rem; line-height: 1.6; }
 .contact-main-phone {
   display: inline-block;
-  margin: 0 0 1.5rem;
-  font-family: var(--display);
+  margin: 0 0 1rem;
+  font-family: var(--display), serif;
   font-size: clamp(1.65rem, 2.6vw, 2.5rem);
   font-weight: 400;
   font-variant-numeric: lining-nums tabular-nums;
@@ -651,15 +651,19 @@ h1, h2 { font-family: var(--display); font-weight: 400; }
   white-space: nowrap;
 }
 .contact-main-phone:hover { color: var(--bronze); }
-.contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-top: auto; }
-.contact-actions .button { justify-content: center; gap: .6rem; }
-.contact-actions .button svg { flex-shrink: 0; width: 20px; height: 20px; }
-.contact-panel .button { min-width: 0; padding: .85rem 1.25rem; border-radius: .3rem; font-size: .9rem; }
+.contact-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; max-width: 20.75rem; gap: .75rem; margin-top: auto; }
+.contact-actions .button { width: 100%; justify-self: stretch; }
+.contact-panel .button { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-width: 0; min-height: 50px; padding: .75rem .65rem; border-radius: .3rem; font-size: .9rem; line-height: 1.4; white-space: nowrap; }
+.contact-panel .button svg { flex: 0 0 20px; width: 20px; height: 20px; }
 .contact-call-button { background: var(--ink); border: 1px solid var(--ink); color: var(--ivory); }
 .contact-call-button:hover { background: var(--bronze); border-color: var(--bronze); color: var(--ivory); }
-.contact-panel address { margin-bottom: 1.5rem; font-style: normal; font-size: 1.2rem; line-height: 1.65; }
-.contact-directions { margin-top: auto; }
-.contact-social-section { display: flex; justify-content: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+.contact-panel address { margin: 0 0 1rem; font-style: normal; font-size: 1.1rem; line-height: 1.6; }
+.contact-directions { width: min(10rem, calc((100% - .75rem) / 2)); margin-top: auto; }
+@media (max-width: 380px) {
+  .contact-actions { grid-template-columns: 1fr; max-width: none; }
+  .contact-directions { width: 100%; }
+}
+.contact-social-section { display: flex; justify-content: center; margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
 .contact-social-section .footer-socials { justify-content: center; gap: clamp(.75rem, 2vw, 1.5rem); margin-top: 0; }
 .contact-social-section .footer-socials a {
   width: clamp(3.25rem, 5vw, 4rem);
@@ -707,11 +711,11 @@ h1, h2 { font-family: var(--display); font-weight: 400; }
 .mobile-menu-top { display: flex; justify-content: flex-end; padding: max(.75rem, env(safe-area-inset-top)) var(--margin) .75rem; }
 .mobile-menu-content { display: grid; align-content: center; min-height: calc(100dvh - 5rem); max-width: 28rem; margin-inline: auto; padding: 1rem var(--margin) max(4rem, env(safe-area-inset-bottom)); }
 .masthead .mobile-navigation { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
-.masthead .mobile-navigation a { display: flex; align-items: center; justify-content: center; gap: 1rem; border-bottom: 1px solid var(--line); padding: 1rem .75rem; font: 400 clamp(1.6rem, 5svh, 2.25rem)/1.3 var(--display); letter-spacing: .015em; transition: color 220ms ease, background-color 220ms ease; }
+.masthead .mobile-navigation a { --link-order: 0; display: flex; align-items: center; justify-content: center; gap: 1rem; border-bottom: 1px solid var(--line); padding: 1rem .75rem; font: 400 clamp(1.6rem, 5svh, 2.25rem)/1.3 var(--display); letter-spacing: .015em; transition: color 220ms ease, background-color 220ms ease; }
 .masthead .mobile-navigation a::before { content: none; }
 .masthead .mobile-navigation a[aria-current="page"] { color: var(--bronze); font-style: italic; background: #8b632f08; }
 .masthead .mobile-navigation a:is(:hover, :focus-visible) { color: var(--bronze); background: #8b632f0c; }
-.mobile-menu[open] .mobile-navigation a { animation: mobile-link-in 420ms cubic-bezier(.22, 1, .36, 1) both; animation-delay: calc(70ms + var(--link-order) * 45ms); }
+.mobile-menu[open] .mobile-navigation a { animation: mobile-link-in 420ms cubic-bezier(.22, 1, .36, 1) both; animation-delay: calc(70ms + var(--link-order, 0) * 45ms); }
 @keyframes mobile-menu-in { from { opacity: 0; transform: translateY(-1.25rem); } to { opacity: 1; transform: translateY(0); } }
 @keyframes mobile-menu-out { to { opacity: 0; transform: translateY(-.75rem); } }
 @keyframes mobile-link-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
@@ -750,7 +754,6 @@ main, .hero-copy, .introduction-copy, .doctor-copy, .treatment-description, .con
   .treatment-description p { font-size: 1rem; }
   .treatment-detail > summary { padding-block: 1rem; gap: .5rem; }
   .comparison-stage input { touch-action: pan-y; }
-  .contact-panel .button { min-height: 44px; }
   .contact-main-phone { max-width: 100%; font-size: clamp(1.65rem, 7vw, 2rem); }
   .footer-links a, .footer-bottom > a { display: inline-flex; align-items: center; min-height: 44px; }
   .footer-links { gap: .25rem; }
@@ -770,7 +773,6 @@ main, .hero-copy, .introduction-copy, .doctor-copy, .treatment-description, .con
   .comparison-label-after { right: .75rem; }
   .contact-panel { padding: 1.25rem; }
   .contact-actions { width: 100%; }
-  .contact-actions .button { flex: 1 1 auto; }
   .site-footer { padding-top: 2.5rem; }
   .footer-columns { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom { align-items: flex-start; flex-direction: column; }
