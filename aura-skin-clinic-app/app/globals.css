@@ -714,11 +714,11 @@ h1, h2 { font-family: var(--display), serif; font-weight: 400; }
   overflow-y: auto;
   overscroll-behavior: contain;
 }
-.mobile-menu::backdrop { background: #2a201c80; }
-.mobile-menu[open] { opacity: 1; transform: translateY(0); transition: opacity 320ms ease, transform 420ms cubic-bezier(.22, 1, .36, 1); }
-.mobile-menu[open][data-closing="true"] { opacity: 0; transform: translateY(-.5rem); transition-duration: 320ms; }
+.mobile-menu::backdrop { background: transparent; }
+.mobile-menu[open] { opacity: 1; transition: opacity 320ms cubic-bezier(.4, 0, .2, 1); }
+.mobile-menu[open][data-closing="true"] { opacity: 0; }
 @starting-style {
-  .mobile-menu[open] { opacity: 0; transform: translateY(-.75rem); }
+  .mobile-menu[open] { opacity: 0; }
 }
 .mobile-menu-top { display: flex; justify-content: flex-end; align-items: center; height: var(--masthead-height); padding: env(safe-area-inset-top) var(--margin) 0; }
 .mobile-menu-content { display: grid; align-content: center; min-height: calc(100dvh - var(--masthead-height)); max-width: 24rem; margin-inline: auto; padding: 1rem var(--margin) max(4rem, env(safe-area-inset-bottom)); }

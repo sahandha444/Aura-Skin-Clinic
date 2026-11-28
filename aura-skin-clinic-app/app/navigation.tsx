@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useRef, useState, type CSSProperties, type MouseEvent } from "react";
+import { useCallback, useEffect, useRef, useState, type CSSProperties, type MouseEvent } from "react";
 
 const navigationLinks = [
   { href: "/", label: "Home" },
@@ -22,36 +22,33 @@ export default function Navigation() {
   const [open, setOpen] = useState(false);
   const [closing, setClosing] = useState(false);
 
-  function restoreScroll() {
+  const restoreScroll = useCallback(() => {
     if (savedOverflow.current !== null) {
       document.body.style.setProperty("overflow", savedOverflow.current);
       savedOverflow.current = null;
     }
-  }
+  }, []);
 
-  function finishClose() {
+  const finishClose = useCallback(() => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
     closeTimer.current = null;
     dialogRef.current?.close();
     restoreScroll();
     setOpen(false);
     setClosing(false);
-    if (pendingHref.current) {
-      const href = pendingHref.current;
-      pendingHref.current = null;
-      router.push(href);
-    }
-  }
+    pendingHref.current = null;
+  }, [restoreScroll]);
 
-  function closeMenu() {
+  const closeMenu = useCallback(() => {
     if (closeTimer.current) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       finishClose();
       return;
     }
     setClosing(true);
-    closeTimer.current = setTimeout(finishClose, 320);
-  }
+    // Fallback if the browser does not dispatch the transition completion event.
+    closeTimer.current = setTimeout(finishClose, 420);
+  }, [finishClose]);
 
   function openMenu() {
     if (!dialogRef.current || dialogRef.current.open) return;
@@ -65,9 +62,24 @@ export default function Navigation() {
   function navigate(event: MouseEvent<HTMLAnchorElement>, href: string) {
     if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
+    if (closeTimer.current) return;
+    if (href === pathname) {
+      closeMenu();
+      return;
+    }
     pendingHref.current = href;
-    closeMenu();
+    router.push(href, { scroll: false });
   }
+
+  useEffect(() => {
+    if (pendingHref.current !== pathname || !dialogRef.current?.open) return;
+    // Reveal the destination only after its route has committed beneath the menu.
+    const frame = window.requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      closeMenu();
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [pathname, closeMenu]);
 
   useEffect(() => {
     const desktop = window.matchMedia("(min-width: 801px)");
@@ -76,6 +88,7 @@ export default function Navigation() {
       dialogRef.current.close();
       if (closeTimer.current) clearTimeout(closeTimer.current);
       closeTimer.current = null;
+      pendingHref.current = null;
       restoreScroll();
       setOpen(false);
       setClosing(false);
@@ -86,7 +99,7 @@ export default function Navigation() {
       if (closeTimer.current) clearTimeout(closeTimer.current);
       restoreScroll();
     };
-  }, []);
+  }, [restoreScroll]);
 
   return (
     <>
@@ -110,6 +123,9 @@ export default function Navigation() {
       className="mobile-menu"
       aria-label="Navigation"
       data-closing={closing}
+      onTransitionEnd={event => {
+        if (closing && event.target === event.currentTarget && event.propertyName === "opacity") finishClose();
+      }}
       onCancel={event => { event.preventDefault(); closeMenu(); }}
     >
       <div className="mobile-menu-top">
