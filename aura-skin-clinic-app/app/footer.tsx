@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import FooterSocials, { WhatsAppIcon } from "./footer-socials";
 import logo from "../public/logo/aura-wordmark.png";
+import { generalWhatsAppUrl } from "./whatsapp";
 
 export default function Footer() {
   return (
@@ -37,7 +38,7 @@ export default function Footer() {
               <svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor" aria-hidden="true"><path d="m6.6 10.8 2.6-2.6L6 2.5 2 3c-1 9.7 9.3 20 19 19l.5-4-5.7-3.2-2.6 2.6a17 17 0 0 1-6.6-6.6Z" /></svg>
               <span>+94 77 768 2014</span>
             </a>
-            <a className="footer-contact-item" href="https://wa.me/94777682014" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Aura on +94 77 768 2014">
+            <a className="footer-contact-item" href={generalWhatsAppUrl} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Aura on +94 77 768 2014">
               <WhatsAppIcon />
               <span>+94 77 768 2014</span>
             </a>

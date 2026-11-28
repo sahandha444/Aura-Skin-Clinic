@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FooterSocials, { WhatsAppIcon } from "../footer-socials";
+import { generalWhatsAppUrl } from "../whatsapp";
 
 export const metadata: Metadata = {
   title: "Contact | AURA Family Health Care & Skin Clinic",
@@ -28,7 +29,7 @@ export default function Contact() {
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m7 3 3 5-2 2a15 15 0 0 0 6 6l2-2 5 3c0 3-2 4-4 4C10 21 3 14 3 7c0-2 1-4 4-4Z" /></svg>
               Call us
             </a>
-            <a className="button button-outline" href="https://wa.me/94777682014" target="_blank" rel="noopener noreferrer">
+            <a className="button button-outline" href={generalWhatsAppUrl} target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon />
               WhatsApp
             </a>

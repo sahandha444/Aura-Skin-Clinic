@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { WhatsAppIcon } from "./footer-socials";
+import { generalWhatsAppUrl } from "./whatsapp";
 
 export default function FloatingContact() {
   const [visible, setVisible] = useState(false);
@@ -30,7 +31,7 @@ export default function FloatingContact() {
 
   return (
     <aside className="floating-contact" aria-label="Contact Aura" data-hidden={footerVisible} inert={footerVisible} aria-hidden={footerVisible}>
-      <a className="floating-contact-whatsapp" href="https://wa.me/94777682014" target="_blank" rel="noopener noreferrer" aria-label="Message Aura on WhatsApp" title="Message on WhatsApp">
+      <a className="floating-contact-whatsapp" href={generalWhatsAppUrl} target="_blank" rel="noopener noreferrer" aria-label="Message Aura on WhatsApp" title="Message on WhatsApp">
         <WhatsAppIcon />
         <span>WhatsApp</span>
       </a>

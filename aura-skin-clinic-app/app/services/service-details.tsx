@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { serviceCategories } from "./data";
 import BeforeAfter from "./before-after";
 import AnimatedDetails from "./animated-details";
+import { getWhatsAppUrl } from "../whatsapp";
 import { aestheticTreatmentDetails, bodyTreatmentDetails, hairTreatmentDetails, treatmentDetails } from "./treatments";
 
 export default function ServiceDetails() {
@@ -64,7 +65,7 @@ export default function ServiceDetails() {
                       <p>{treatment.procedure}</p>
                       <a
                         className="button button-outline"
-                        href={`https://wa.me/94777682014?text=${encodeURIComponent(`Hello Aura, I’d like to know more about ${service} (${category.name}). Could you please share more details?`)}`}
+                        href={getWhatsAppUrl(`Hello Aura, I’d like to know more about ${service} (${category.name}). Could you please share more details?`)}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`Ask more about ${service} on WhatsApp`}
