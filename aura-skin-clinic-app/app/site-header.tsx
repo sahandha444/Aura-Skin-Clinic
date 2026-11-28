@@ -45,7 +45,7 @@ export default function SiteHeader() {
         <Image src={logo} alt="" sizes="106px" />
         <sup aria-hidden="true">+</sup>
       </Link>
-      <Navigation key={pathname} />
+      <Navigation />
     </header>
   );
 }

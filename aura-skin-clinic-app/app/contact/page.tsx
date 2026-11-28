@@ -3,10 +3,10 @@ import FooterSocials, { WhatsAppIcon } from "../footer-socials";
 
 export const metadata: Metadata = {
   title: "Contact | AURA Family Health Care & Skin Clinic",
-  description: "Contact Aura in Isadeen town, Matara. Call 077 768 2014 or message us on WhatsApp to discuss your visit.",
+  description: "Contact Aura at No. 82, Sri Rathanapala Mawatha, Isadeen Town, Matara, Sri Lanka. Call 077 768 2014 or message us on WhatsApp to discuss your visit.",
 };
 
-const directions = "https://www.google.com/maps/search/?api=1&query=AURA+Family+Health+Care+Skin+Clinic+Isadeen+Town+Matara";
+const directions = "https://www.google.com/maps/search/?api=1&query=AURA+Family+Health+Care+Skin+Clinic+82+Sri+Rathanapala+Mawatha+Isadeen+Town+Matara+Sri+Lanka";
 
 export default function Contact() {
   return (
@@ -40,7 +40,7 @@ export default function Contact() {
           </span>
           <h2 id="contact-visit-title">Visit Aura</h2>
           <p className="contact-panel-intro">Family Health Care &amp; Skin Clinic</p>
-          <address>Isadeen town, Matara<br />Sri Lanka</address>
+          <address>No. 82, Sri Rathanapala Mawatha<br />Isadeen Town, Matara<br />Sri Lanka</address>
           <a className="button button-outline contact-directions" href={directions} target="_blank" rel="noopener noreferrer">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" /><circle cx="12" cy="10" r="2.5" /></svg>
             Get directions

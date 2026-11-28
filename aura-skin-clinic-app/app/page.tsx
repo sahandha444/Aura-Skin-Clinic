@@ -20,11 +20,13 @@ export default function Home() {
             <Link className="button button-cream" href="/services">Explore our services</Link>
           </div>
           <p className="hero-location">
+            <Link href="/contact">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
               <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" />
               <circle cx="12" cy="10" r="2.5" />
             </svg>
             Isadeen town, Matara
+            </Link>
           </p>
         </div>
   
@@ -85,7 +87,7 @@ export default function Home() {
         <div className="doctor-copy">
           <h2 id="doctor-title">Your skin clinic.<br />Your family doctor.</h2>
           <p>
-            With <strong className="doctor-experience">20+ years</strong> of
+            With <span className="doctor-experience"><span className="doctor-experience-number">20+</span> years</span> of
             experience, <em className="doctor-name">Dr. Samantha Weththasinghe</em> is
             trusted by patients as their first choice for care.
           </p>

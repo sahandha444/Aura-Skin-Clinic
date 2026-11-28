@@ -50,7 +50,7 @@ export default function Navigation() {
       return;
     }
     setClosing(true);
-    closeTimer.current = setTimeout(finishClose, 280);
+    closeTimer.current = setTimeout(finishClose, 320);
   }
 
   function openMenu() {

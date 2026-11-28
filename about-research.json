@@ -1,0 +1,32 @@
+{
+  "researchedOn": "2026-11-28",
+  "sources": [
+    {
+      "url": "https://www.facebook.com/61568542799622",
+      "observed": "Public metadata identifies Aura Family Health Care & Skin Clinic in Matara and family healthcare, skin, hair and cosmetic services. Public gallery did not expose premises photographs."
+    },
+    {
+      "url": "https://www.instagram.com/aura_by_dr.samantha/",
+      "observed": "Public metadata confirms the clinic account name. Biography and posts were not exposed in the downloaded page."
+    },
+    {
+      "url": "https://magicpin.com/sri-lanka/Matara/Matara-Town/Healthcare/Aura-Family-Health-Care-and-Skin-Clinic/store/24025a5/",
+      "observed": "Address, phone and Aura-branded promotional treatment photograph. The photograph prints Dr. Samantha Weththasinghe, MBBS (Karapitiya), FCAM (India). These abbreviations are reproduced without expanding them or claiming specialist registration.",
+      "imageSource": "https://img.magicpin.com/11144164_store_images_0.jpg",
+      "localAsset": "aura-skin-clinic-app/public/about/aura-clinic-treatment.webp"
+    },
+    {
+      "url": "https://reviewguru.lk/biz/aura-family-health-care-skin-clinic",
+      "observed": "Corroborates No. 82, Sri Rathanapala Mawatha, Isadeen Town, Matara and 077 768 2014. Hours and reviews were not copied into the page."
+    }
+  ],
+  "existingAssets": {
+    "doctorPortrait": "User-supplied public/logo/doctor.jpeg"
+  },
+  "limitations": [
+    "No independently verified specialist registration, years of experience or expanded FCAM credential; no such claims added.",
+    "Qualifications are based on clinic-branded promotional material hosted by a third-party listing, not an independently verified medical register.",
+    "No verifiable photograph of the premises found; treatment banner is labelled as promotional photography and is not presented as a building photograph."
+  ],
+  "page": "aura-skin-clinic-app/app/about/page.tsx"
+}

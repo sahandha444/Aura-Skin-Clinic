@@ -62,7 +62,15 @@ export default function ServiceDetails() {
                       <p className="treatment-intro">{treatment.intro}</p>
                       <p>{treatment.description}</p>
                       <p>{treatment.procedure}</p>
-                      <a className="button button-outline" href="tel:+94777682014">Call for a consultation <span aria-hidden="true">↗</span></a>
+                      <a
+                        className="button button-outline"
+                        href={`https://wa.me/94777682014?text=${encodeURIComponent(`Hello Aura, I’d like to know more about ${service} (${category.name}). Could you please share more details?`)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Ask more about ${service} on WhatsApp`}
+                      >
+                        Ask more about this <span aria-hidden="true">↗</span>
+                      </a>
                     </div>
                     <BeforeAfter
                       compare={treatment.compare}

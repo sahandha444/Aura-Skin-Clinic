@@ -29,9 +29,9 @@ export default function Footer() {
         <div className="footer-contact">
           <h2>Contact</h2>
           <address className="footer-contact-list">
-            <a className="footer-contact-item footer-contact-location" href="https://www.google.com/maps/search/?api=1&query=AURA+Family+Health+Care+Skin+Clinic+Isadeen+Town+Matara" target="_blank" rel="noopener noreferrer" aria-label="Find Aura in Isadeen town, Matara on Google Maps">
+            <a className="footer-contact-item footer-contact-location" href="https://www.google.com/maps/search/?api=1&query=AURA+Family+Health+Care+Skin+Clinic+82+Sri+Rathanapala+Mawatha+Isadeen+Town+Matara+Sri+Lanka" target="_blank" rel="noopener noreferrer" aria-label="Find Aura at No. 82, Sri Rathanapala Mawatha, Isadeen Town, Matara, Sri Lanka on Google Maps">
               <svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" /></svg>
-              <span>Isadeen town, Matara<br />Sri Lanka</span>
+              <span>No. 82, Sri Rathanapala Mawatha<br />Isadeen Town, Matara<br />Sri Lanka</span>
             </a>
             <a className="footer-contact-item" href="tel:+94777682014" aria-label="Call Aura on +94 77 768 2014">
               <svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor" aria-hidden="true"><path d="m6.6 10.8 2.6-2.6L6 2.5 2 3c-1 9.7 9.3 20 19 19l.5-4-5.7-3.2-2.6 2.6a17 17 0 0 1-6.6-6.6Z" /></svg>
