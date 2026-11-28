@@ -726,9 +726,9 @@ h1, h2 { font-family: var(--display), serif; font-weight: 400; }
 .masthead .mobile-navigation a { --link-order: 0; display: flex; align-items: center; justify-content: center; min-height: 56px; border: 0; padding: .85rem .75rem; font: 400 clamp(1.25rem, 3.5svh, 1.5rem)/1.4 var(--display), serif; font-style: normal; letter-spacing: .025em; transition: color 300ms ease; }
 .masthead .mobile-navigation a::before { content: none; }
 .masthead .mobile-navigation a[aria-current="page"] { color: var(--bronze); font-style: normal; }
-.mobile-navigation a > span { position: relative; padding-block: .2rem; transition: transform 240ms cubic-bezier(.22, 1, .36, 1); }
-.mobile-navigation a > span::after { content: ""; position: absolute; left: 50%; bottom: -.2rem; width: 1.4rem; height: 2px; border-radius: 1px; background: var(--bronze); opacity: 0; transform: translateX(-50%) scaleX(.5); transition: opacity 280ms ease, transform 320ms cubic-bezier(.22, 1, .36, 1); }
-.mobile-navigation a[aria-current="page"] > span::after { opacity: 1; transform: translateX(-50%) scaleX(1); }
+.mobile-navigation a > span { position: relative; isolation: isolate; padding-block: .2rem; transition: transform 240ms cubic-bezier(.22, 1, .36, 1); }
+.mobile-navigation a > span::before { content: ""; position: absolute; inset: -.35rem -.85rem; z-index: -1; border-radius: .7rem; background: #8b632f12; opacity: 0; pointer-events: none; transition: opacity 300ms ease; }
+.mobile-navigation a:is([aria-current="page"], :hover, :focus-visible) > span::before { opacity: 1; }
 .mobile-navigation a:active > span { transform: scale(.94); }
 .masthead .mobile-navigation a:is(:hover, :focus-visible) { color: var(--bronze); }
 .mobile-menu[open] .mobile-navigation a { animation: mobile-link-in 460ms cubic-bezier(.22, 1, .36, 1) both; animation-delay: calc(40ms + var(--link-order, 0) * 35ms); }
@@ -793,7 +793,7 @@ main, .hero-copy, .introduction-copy, .doctor-copy, .treatment-description, .con
 }
 @media (prefers-reduced-motion: reduce) {
   .mobile-menu[open], .mobile-menu[open] .mobile-navigation a { animation: none; }
-  .mobile-menu[open], .menu-bars > span, .masthead .mobile-navigation a, .mobile-navigation a > span, .mobile-navigation a > span::after { transition: none; }
+  .mobile-menu[open], .menu-bars > span, .masthead .mobile-navigation a, .mobile-navigation a > span, .mobile-navigation a > span::before { transition: none; }
 }
 @media (max-width: 800px) and (prefers-reduced-motion: no-preference) {
   .mobile-menu[open]:not([data-closing="true"]) .menu-bars > span:nth-child(1) { animation: menu-top-line 300ms ease both; }
